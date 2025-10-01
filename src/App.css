@@ -1,0 +1,31 @@
+/* body */
+body {
+    position: relative;
+}
+
+/* card */
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#SingleBook {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#SingleBookImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}

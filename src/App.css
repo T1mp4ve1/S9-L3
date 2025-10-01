@@ -18,10 +18,13 @@ body {
 
 #SingleBook {
     position: fixed;
+    width: 30%;
+    height: 750px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
+    text-align: center;
 }
 
 #SingleBookImg {

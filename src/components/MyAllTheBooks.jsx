@@ -11,11 +11,11 @@ class MyAllTheBooks extends Component {
     selectedBook: null,
   };
 
-  handleSelectBook = (book) => {
+  mySelectBook = (book) => {
     this.setState({ selectedBook: book });
   };
 
-  handleClose = () => {
+  buttonClose = () => {
     this.setState({ selectedBook: null });
   };
 
@@ -25,7 +25,7 @@ class MyAllTheBooks extends Component {
         {this.state.selectedBook && (
           <MySingleBook
             book={this.state.selectedBook}
-            onClose={this.handleClose}
+            onClose={this.buttonClose}
           />
         )}
         <Row xs={1} sm={2} md={3} lg={5} className="g-4">
@@ -39,7 +39,7 @@ class MyAllTheBooks extends Component {
                   <Button variant="success">Buy</Button>
                   <Button
                     variant="secondary"
-                    onClick={() => this.handleSelectBook(book)}
+                    onClick={() => this.mySelectBook(book)}
                     className="ms-2"
                   >
                     Details
